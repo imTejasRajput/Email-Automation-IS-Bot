@@ -5,7 +5,7 @@ import markdown
 import time
 from emailcreator import basic_email_creator, ai_email_creator
 st.title("Email Automation")
-st.write("Create with 💖 By Tejas Rajput.")
+st.write("Created with 💖 By Tejas Rajput.")
 
 auth, data_settings, settings = st.tabs(["Authentication", "Data Settings","Settings"])
 
