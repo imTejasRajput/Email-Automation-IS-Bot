@@ -45,7 +45,7 @@ def summarise(about=None,experience=None):
 
 # Create Groq client
 
-client = Groq(api_key="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")
+client = Groq(api_key=st.secrets["API_KEY"])
 
 def create_response(about=None,experience=None) :
     summarise_info=summarise(about,experience)
