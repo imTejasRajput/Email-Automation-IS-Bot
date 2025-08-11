@@ -78,7 +78,7 @@ with settings:
                         "gmail",app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                         )
                     settings_container.warning('mail sent')
-                    time.sleep(20)
+                    time.sleep(30)
             else:
                 settings_container.warning("Please Select All Options")
 
