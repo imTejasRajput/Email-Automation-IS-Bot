@@ -17,7 +17,7 @@ with auth:
         password = auth_container.text_input("Password", type="password",key='person_password')
         id_verify=auth_container.button(label='Verify',key='person_verify')
         auth_container.title("Email Credential",)
-        email = auth_container.text_input("Email",key='person_email')
+        entered_email = auth_container.text_input("Email",key='person_email')
         app_password = auth_container.text_input("App Password", type="password",key='person_email_password')
         email_verify=auth_container.button(label='Verify',key='person_email_verify')
 
@@ -68,14 +68,14 @@ with settings:
 
         if settings_container.button(label='run button',key='run'):
             # Basic Template 
-            if selected_subject and selected_currency is not None and selected_price and selected_template=='Basic' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None:
+            if selected_subject and selected_currency is not None and selected_price and selected_template=='Basic' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None:
                 settings_container.warning("All options are correct")
                 
                 for lead in clean_data(uploaded_file).itertuples():
                     email=basic_email_creator(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title,price=selected_currency+' '+selected_price)
                     html_content = markdown.markdown(email)
                     send_mail(
-                        "gmail","gvsw oygf jwxf fchb",'tejas@mashriqleaders.com',lead.Email,selected_subject,html_content 
+                        "gmail",app_password,entered_email,lead.Email,selected_subject,html_content 
                         )
                     settings_container.warning('mail sent')
                     time.sleep(20)
@@ -83,15 +83,16 @@ with settings:
                 settings_container.warning("Please Select All Options")
 
             # Ai Template
-            if selected_subject and selected_currency is not None and selected_price and selected_template=='Ai' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None  :
-                settings_container.warning("All options are correct")
+            if selected_subject and selected_currency is not None and selected_price and selected_template=='Ai' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None:
+                settings_container.warning("All options are correct") 
+                settings_container.warning("All options are correct :)")
                 df= clean_data(uploaded_file)
                 if not ( df['About'].isna().any() and df['Experience'].isna().any() ) :
                     for lead in clean_data(uploaded_file).itertuples():
                         email=ai_email_creator(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title,price=selected_currency+' '+selected_price,about=lead.About)
                         html_content = markdown.markdown(email)
                         send_mail(
-                            "gmail","gvsw oygf jwxf fchb",'tejas@mashriqleaders.com',lead.Email,selected_subject,html_content 
+                            "gmail",app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                             )
                         settings_container.warning('mail sent')
                         time.sleep(20)
