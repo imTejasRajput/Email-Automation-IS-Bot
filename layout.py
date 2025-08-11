@@ -75,7 +75,7 @@ with settings:
                     email=basic_email_creator(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title,price=selected_currency+' '+selected_price)
                     html_content = markdown.markdown(email)
                     send_mail(
-                        "gmail",app_password,entered_email,lead.Email,selected_subject,html_content 
+                        "gmail",app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                         )
                     settings_container.warning('mail sent')
                     time.sleep(20)
@@ -85,7 +85,6 @@ with settings:
             # Ai Template
             if selected_subject and selected_currency is not None and selected_price and selected_template=='Ai' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None:
                 settings_container.warning("All options are correct") 
-                settings_container.warning("All options are correct :)")
                 df= clean_data(uploaded_file)
                 if not ( df['About'].isna().any() and df['Experience'].isna().any() ) :
                     for lead in clean_data(uploaded_file).itertuples():
@@ -94,7 +93,7 @@ with settings:
                         send_mail(
                             "gmail",app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                             )
-                        settings_container.warning('mail sent')
+                        settings_container.toast('mail sent')
                         time.sleep(20)
                 else :
                     settings_container.warning("Data Should Not Have About And Education Section Empty For AI Template")
