@@ -4,8 +4,8 @@ from emailsender import send_mail
 import markdown
 import time
 from emailcreator import basic_email_creator, ai_email_creator
-st.title("Hello, Streamlit!")
-st.write("This is a simple app to get started.")
+st.title("Email Automation")
+st.write("Create with 💖 By Tejas Rajput.")
 
 auth, data_settings, settings = st.tabs(["Authentication", "Data Settings","Settings"])
 
