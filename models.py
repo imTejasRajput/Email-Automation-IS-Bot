@@ -1,7 +1,9 @@
 from groq import Groq
+import streamlit as st
 import os
 def summarise(about=None,experience=None):
-    client = Groq(api_key="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")
+    client = Groq(api_key= st.secrets["API_KEY"]
+)
 
     if (not about) and (not experience ):
         return None
