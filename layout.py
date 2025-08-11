@@ -93,7 +93,7 @@ with settings:
                         send_mail(
                             "gmail",app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                             )
-                        settings_container.toast('mail sent')
+                        settings_container.success(body='mail sent')
                         time.sleep(20)
                 else :
                     settings_container.warning("Data Should Not Have About And Education Section Empty For AI Template")
