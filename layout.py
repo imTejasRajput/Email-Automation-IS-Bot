@@ -92,7 +92,7 @@ with settings:
                         email=ai_email_creator(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title,price=selected_currency+' '+selected_price,about=lead.About)
                         html_content = markdown.markdown(email)
                         send_mail(
-                            gmail,app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
+                            'gmail',app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                             )
                         settings_container.success(body='mail sent')
                         time.sleep(20)
