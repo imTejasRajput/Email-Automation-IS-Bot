@@ -72,12 +72,11 @@ with settings:
             # Basic Template 
             if selected_subject and selected_currency is not None and selected_price and selected_template=='Basic' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None and selected_domain_provider is not None:
                 settings_container.warning("All options are correct")
-                
                 for lead in clean_data(uploaded_file).itertuples():
                     email=basic_email_creator(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title,price=selected_currency+' '+selected_price)
                     html_content = markdown.markdown(email)
                     send_mail(
-                         selected_domain_provider,app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
+                         'gmail',app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                         )
                     settings_container.warning('mail sent')
                     time.sleep(30)
@@ -93,7 +92,7 @@ with settings:
                         email=ai_email_creator(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title,price=selected_currency+' '+selected_price,about=lead.About)
                         html_content = markdown.markdown(email)
                         send_mail(
-                            selected_domain_provider,app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
+                            gmail,app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                             )
                         settings_container.success(body='mail sent')
                         time.sleep(20)
