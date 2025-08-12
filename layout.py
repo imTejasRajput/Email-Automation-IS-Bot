@@ -47,6 +47,8 @@ with settings:
                     'Documenting Leadership That Drives Change – Let’s Begin',
                     'Your Professional Journey Stands Out – Let’s Explore a Feature',
                 ]
+        settings_container.title("Select Your Domain Provider")
+        selected_domain_provider=settings_container.selectbox(label='email subjects',options=['gmail','outlook'])
         settings_container.title("Select Subject")
         selected_subject=settings_container.selectbox(label='email subjects',options=subjects)
         settings_container.title("Select Currency")
@@ -68,14 +70,14 @@ with settings:
 
         if settings_container.button(label='run button',key='run'):
             # Basic Template 
-            if selected_subject and selected_currency is not None and selected_price and selected_template=='Basic' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None:
+            if selected_subject and selected_currency is not None and selected_price and selected_template=='Basic' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None and selected_domain_provider is not None:
                 settings_container.warning("All options are correct")
                 
                 for lead in clean_data(uploaded_file).itertuples():
                     email=basic_email_creator(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title,price=selected_currency+' '+selected_price)
                     html_content = markdown.markdown(email)
                     send_mail(
-                        "gmail",app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
+                         selected_domain_provider,app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                         )
                     settings_container.warning('mail sent')
                     time.sleep(30)
@@ -83,7 +85,7 @@ with settings:
                 settings_container.warning("Please Select All Options")
 
             # Ai Template
-            if selected_subject and selected_currency is not None and selected_price and selected_template=='Ai' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None:
+            if selected_subject and selected_currency is not None and selected_price and selected_template=='Ai' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None and selected_domain_provider is not None:
                 settings_container.warning("All options are correct") 
                 df= clean_data(uploaded_file)
                 if not ( df['About'].isna().any() and df['Experience'].isna().any() ) :
@@ -91,7 +93,7 @@ with settings:
                         email=ai_email_creator(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title,price=selected_currency+' '+selected_price,about=lead.About)
                         html_content = markdown.markdown(email)
                         send_mail(
-                            "gmail",app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
+                            selected_domain_provider,app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
                             )
                         settings_container.success(body='mail sent')
                         time.sleep(20)
