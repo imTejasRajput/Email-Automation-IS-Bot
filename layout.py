@@ -3,7 +3,7 @@ from processing import clean_data
 from emailsender import send_mail
 import markdown
 import time
-from emailcreator import basic_email_creator, ai_email_creator
+from emailcreator import basic_email_creator, ai_email_creator,test_email_creator
 st.title("Email Automation")
 st.write("Created with 💖 By Tejas Rajput.")
 
