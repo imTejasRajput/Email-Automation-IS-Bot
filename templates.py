@@ -82,3 +82,20 @@ Warm regards,
 🌐 [Mashriq Leaders](https://www.mashriqleaders.com)
 
 """
+
+
+TEST_TEMPLATE='''
+
+
+Leading With Empathy
+
+There are fundamental changes in leadership expectations. When hybrid teams, generational diversity, and the speed of social change are now the characteristics of our times, then being able to lead, guide, think, and act more with empathetic and emotional awareness is no longer a choice, but a necessity. The core of this transformation lies in Emotional Intelligence (EI), a set of skills which enable leaders to relate, to communicate, to inspire more enlightened. Women leaders are increasingly emerging as front-runners in this category due to their inherent ability in this field. Their empathy, teamwork, and personal insight are changing the paradigm of what robust, present-day leadership means.
+
+Understanding Emotional Intelligence
+
+Emotional Intelligence is a term introduced by psychologist Daniel Goleman and is made up of five fundamental aspects, which include self-awareness, self-regulation, motivation, empathy, and social skills. These skills affect the way leadership handles conduct, social dynamics, and personal choices that have constructive outcomes. In contrast to IQ, which is relatively unchangeable, emotional intelligence can be sharpened and enhanced with practice.
+
+EI is not all about being a nice person or expressive. It is a tactical leadership capability that may affect communication, collaboration, conflict resolution, and team morale. High emotional intelligence helps leaders become more in touch with the emotional disposition of their groups, think critically in extreme situations, and build open and psychologically safe work cultures.
+
+
+'''
