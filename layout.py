@@ -46,6 +46,7 @@ with settings:
                     'Contributing to Our Next Business Publication – You’re Invited',
                     'Documenting Leadership That Drives Change – Let’s Begin',
                     'Your Professional Journey Stands Out – Let’s Explore a Feature',
+                  'Inquiry About Your Mental Health'
                 ]
         settings_container.title("Select Your Domain Provider")
         selected_domain_provider=settings_container.selectbox(label='email subjects',options=['gmail','outlook'])
@@ -98,6 +99,21 @@ with settings:
                         time.sleep(20)
                 else :
                     settings_container.warning("Data Should Not Have About And Education Section Empty For AI Template")
+
+            # Test Template
+            if selected_subject and selected_currency is not None and selected_price and selected_template=='Test' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None and selected_domain_provider is not None:
+                settings_container.warning("All options are correct")
+                for lead in clean_data(uploaded_file).itertuples():
+                    email=test_email_creator()
+                    html_content = markdown.markdown(email)
+                    send_mail(
+                         'gmail',app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
+                        )
+                    settings_container.warning('mail sent')
+                    time.sleep(30)
+            else:
+                settings_container.warning("Please Select All Options")
+
 
             
      
