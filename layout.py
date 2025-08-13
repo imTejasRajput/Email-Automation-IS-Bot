@@ -57,7 +57,7 @@ with settings:
         selected_price=settings_container.text_input(key="pricing",label='enter price')
         
         settings_container.title("Choose Template")
-        selected_template=settings_container.radio(label='templates',key='template_options',options=['Basic','Ai'])
+        selected_template=settings_container.radio(label='templates',key='template_options',options=['Basic','Ai','Test'])
         
         settings_container.title("Enter Magazine Title")
         selected_magazine_title=settings_container.text_input(label='Enter The Magazine Title')
