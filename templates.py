@@ -24,7 +24,7 @@ It would be an honor to feature your professional journey in this special editio
 
 Our editorial and creative teams will manage the full process from storytelling to final layout ensuring your profile reflects both your professional identity and leadership philosophy.
 
-**"Editorial Sponsorship: {price}"**
+**Editorial Sponsorship: {price}**
 
 If this opportunity aligns with your vision, I’d be happy to send over the formal proposal and walk you through the next steps.
 
@@ -38,7 +38,6 @@ Warm regards,
 **Mashriq Leaders Magazine**  
 📧 [tejas@mashriqleaders.com](mailto:tejas@mashriqleaders.com)  
 📱 +971 55 908 2464  
-🌐 [Mashriq Leaders](https://www.mashriqleaders.com)
 
 """
 
