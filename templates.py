@@ -1,7 +1,8 @@
 # General Use Templates
 
 BASIC_TEMPLATE= """
-Dear {name},
+<div style="font-family: Georgia, serif;">
+Dear {name},  
 
 I hope this email finds you well.  
 I'm Tejas from **{magazine_title}**, a publication dedicated to showcasing visionary leaders driving innovation and impact.  
@@ -32,13 +33,14 @@ Looking forward to the opportunity to showcase your remarkable journey.
 
 Warm regards,  
 
---
+--  
 **Tejas**  
 *Market Research Executive*  
 **Mashriq Leaders Magazine**  
 📧 [tejas@mashriqleaders.com](mailto:tejas@mashriqleaders.com)  
 📱 +971 55 908 2464  
 
+</div>
 """
 
 AI_TEMPLATE="""
