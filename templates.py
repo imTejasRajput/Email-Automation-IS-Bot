@@ -1,7 +1,6 @@
 # General Use Templates
 
 BASIC_TEMPLATE= """
-<div style="font-family: Georgia, serif;">
 Dear {name},  
 
 I hope this email finds you well.  
@@ -39,8 +38,6 @@ Warm regards,
 **Mashriq Leaders Magazine**  
 📧 [tejas@mashriqleaders.com](mailto:tejas@mashriqleaders.com)  
 📱 +971 55 908 2464  
-
-</div>
 """
 
 AI_TEMPLATE="""
