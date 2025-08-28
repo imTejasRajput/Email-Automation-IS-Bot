@@ -40,6 +40,50 @@ Warm regards,
 📱 +971 55 908 2464  
 """
 
+
+BASIC_TEMPLATE_2= """
+Dear {name},
+
+I am writing to inform you that you have been selected by our Editorial Review Board for inclusion in the **{edition_title}** publication by **{magazine_title}**.
+
+Following a comprehensive evaluation process, your professional achievements and contributions to the sustainable energy sector have met the criteria established by our selection committee for this distinguished recognition.
+
+## PROGRAM DETAILS:
+
+The leadership recognition program encompasses the following components:
+
+* **Primary Feature Placement** - Cover spotlight positioning
+* **Comprehensive Editorial Profile** - 6-8 page dedicated coverage
+* **Multimedia Documentation** - Professional video interview
+* **Publication Distribution** - Circulation to 1,000,000+ readers globally (print and digital formats)
+* **Official Certification** - Digital certificate and leadership badge
+* **Media Outreach Campaign** - Multi-platform social media promotion
+* **Industry Newsletter Integration** - Inclusion in executive leadership communications
+* **Future Recognition Options** - Preferential consideration for subsequent editions
+
+Our editorial team will coordinate all aspects of content development, design, and distribution to ensure professional standards are maintained throughout the process.
+
+Should you wish to proceed with this recognition opportunity, please confirm your participation within 14 business days. Upon confirmation, detailed program documentation and timeline will be forwarded to you.
+
+**NEXT STEP:** To proceed with this recognition, please schedule a 15-minute consultation with our Editor-in-Chief using the following booking link: [Calendar Link]
+
+*Please note: Editorial sponsorship charges apply for program participation.*
+
+For any clarifications regarding this selection or program details, please contact our office during standard business hours.
+
+Respectfully yours,
+--
+**Tejas**  
+**Editorial Coordinator**  
+**Mashriq Leaders Magazine**  
+Publications Division
++971 55 908 2464
+ 
+
+"""
+
+
+
 AI_TEMPLATE="""
 Dear {name},
 
