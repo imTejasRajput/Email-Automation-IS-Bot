@@ -46,6 +46,7 @@ with settings:
                     'Contributing to Our Next Business Publication – You’re Invited',
                     'Documenting Leadership That Drives Change – Let’s Begin',
                     'Your Professional Journey Stands Out – Let’s Explore a Feature',
+                  'Official Notification - Selection for Leadership Recognition Program',
                   'Inquiry About Your Mental Health'
                 ]
         settings_container.title("Select Your Domain Provider")
