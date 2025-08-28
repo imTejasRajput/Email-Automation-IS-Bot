@@ -9,3 +9,7 @@ def ai_email_creator(name,magazine_title,edition_title,price,about,experience=No
 
 def test_email_creator():
     return TEST_TEMPLATE
+
+
+def basic_email_creator_2(name,magazine_title,edition_title):
+    return BASIC_TEMPLATE_2
