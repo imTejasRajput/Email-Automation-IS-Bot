@@ -58,7 +58,7 @@ with settings:
         selected_price=settings_container.text_input(key="pricing",label='enter price')
         
         settings_container.title("Choose Template")
-        selected_template=settings_container.radio(label='templates',key='template_options',options=['Basic','Ai','Test'])
+        selected_template=settings_container.radio(label='templates',key='template_options',options=['Basic','Ai','Test','Basic2'])
         
         settings_container.title("Enter Magazine Title")
         selected_magazine_title=settings_container.text_input(label='Enter The Magazine Title')
@@ -83,6 +83,21 @@ with settings:
                     time.sleep(30)
             else:
                 settings_container.warning("Please Select All Options")
+
+            # Basic Template 2
+            if selected_subject  and selected_template=='Basic2' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None and selected_domain_provider is not None:
+                settings_container.warning("All options are correct")
+                for lead in clean_data(uploaded_file).itertuples():
+                    email=basic_email_creator_2(name=lead.FirstName[0],magazine_title=selected_magazine_title,edition_title=selected_edition_title)
+                    html_content = markdown.markdown(email)
+                    send_mail(
+                         'gmail',app_password,entered_email,lead.Email,lead.Name+' '+selected_subject,html_content 
+                        )
+                    settings_container.warning('mail sent')
+                    time.sleep(30)
+            else:
+                settings_container.warning("Please Select All Options")
+
 
             # Ai Template
             if selected_subject and selected_currency is not None and selected_price and selected_template=='Ai' and uploaded_file is not None and selected_magazine_title is not None and selected_edition_title is not None and app_password is not None and entered_email is not None and selected_domain_provider is not None:
