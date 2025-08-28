@@ -63,8 +63,6 @@ The leadership recognition program encompasses the following components:
 
 Our editorial team will coordinate all aspects of content development, design, and distribution to ensure professional standards are maintained throughout the process.
 
-Should you wish to proceed with this recognition opportunity, please confirm your participation within 14 business days. Upon confirmation, detailed program documentation and timeline will be forwarded to you.
-
 **NEXT STEP:** To proceed with this recognition, please schedule a 15-minute consultation with our Editor-in-Chief using the following booking link:
 [Book Meeting With Editor-In-Chief](https://calendly.com/tejas-mashriqleaders/30min?month=2025-08)  
 
