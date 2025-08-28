@@ -12,4 +12,4 @@ def test_email_creator():
 
 
 def basic_email_creator_2(name,magazine_title,edition_title):
-    return BASIC_TEMPLATE_2
+    return BASIC_TEMPLATE_2.format(name=name,magazine_title=magazine_title,edition_title=edition_title)
