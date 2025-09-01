@@ -63,6 +63,7 @@ The leadership recognition program encompasses the following components:
 - **Option for an Anniversary Re-Feature at a Preferential Rate**
 
 
+
 Our editorial team will coordinate all aspects of content development, design, and distribution to ensure professional standards are maintained throughout the process.
 
 **NEXT STEP:** To proceed, kindly reply to this email confirming your interest in participating. Once we receive your confirmation, we will share the official confirmation order with you, which needs to be signed at your earliest convenience to initiate the editorial process.
