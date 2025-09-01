@@ -52,14 +52,16 @@ Following a comprehensive evaluation process, your professional achievements and
 
 The leadership recognition program encompasses the following components:
 
-* **Primary Feature Placement** - Cover spotlight positioning
-* **Comprehensive Editorial Profile** - 6-8 page dedicated coverage
-* **Multimedia Documentation** - Professional video interview
-* **Publication Distribution** - Circulation to 1,000,000+ readers globally (print and digital formats)
-* **Official Certification** - Digital certificate and leadership badge
-* **Media Outreach Campaign** - Multi-platform social media promotion
-* **Industry Newsletter Integration** - Inclusion in executive leadership communications
-* **Future Recognition Options** - Preferential consideration for subsequent editions
+- **Cover Page Spotlight**
+- **6–8 Pages of Custom Editorial Coverage**
+- **Professionally Edited Video Interview**
+- **Distribution to 1M+ Global Readers (Digital + Print)**
+- **Digital Certificate of Recognition & Official Badge**
+- **Dedicated Social Media Highlights (LinkedIn, Instagram, Facebook)**
+- **Personal Branding Reels and Short Videos**
+- **Inclusion in Our Global Leadership Newsletter**
+- **Option for an Anniversary Re-Feature at a Preferential Rate**
+
 
 Our editorial team will coordinate all aspects of content development, design, and distribution to ensure professional standards are maintained throughout the process.
 
